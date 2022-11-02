@@ -2,6 +2,7 @@ call plug#begin()
 	Plug 'junegunn/fzf.vim'
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 	Plug 'luochen1990/rainbow'
+	Plug 'junegunn/vim-peekaboo'
 call plug#end()
 
 lan en
@@ -12,6 +13,7 @@ set gfn=Sarasa_Mono_J:h12
 set t_Co=256
 colorscheme monokai
 set rnu nu
+set ic scs
 
 set textwidth=80
 set cc=+1
@@ -24,6 +26,8 @@ set hls
 set is
 
 set hidden
+set clipboard=unnamed
+set nrformats+=alpha
 
 set grepprg=rg\ --vimgrep\ --smart-case\ --follow
 let mapleader="\<space>"
